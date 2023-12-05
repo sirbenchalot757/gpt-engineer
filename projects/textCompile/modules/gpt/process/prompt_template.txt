@@ -1,0 +1,21 @@
+These are strings of emails that need to be cleaned up and formatted into JSON. Format each email as a separate JSON object with the following keys: 'date', 'to', 'from', 'subject', and 'body'. Ensure all dates are in ISO 8601 format with time (YYYY-MM-DDTHH:MM:SS). Correct any spelling errors or nonsensical content in the emails. Omit unnecessary data such as signatures, disclaimers, warnings, and other extraneous information.
+
+You may encounter text that is not an email such as diagnostics or system messages, just ignore these.
+
+The JSON format should strictly adhere to standard JSON syntax. Each email should be a distinct object within an array, separated by commas. Do not start JSON objects with '{{[' or end them with ']}}'. Use proper JSON array notation for multiple emails.
+
+Example of correctly formatted JSON:
+[
+  {{
+    "date": "YYYY-MM-DDTHH:MM:SS",
+    "to": ["recipient@example.com"],
+    "from": "sender@example.com",
+    "subject": "Email Subject",
+    "body": "Email body text."
+  }}
+]
+
+Here is an email:
+{text}
+
+Please format this email as a JSON object within an array. Ensure the response is strictly valid JSON.

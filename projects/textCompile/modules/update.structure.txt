@@ -1,0 +1,62 @@
+project_root/
+│
+├── main.py     # Entry point of your application
+│   ├── divide_into_batches()
+│   ├── process_batch()
+│   ├── format_filename()
+│   └── main()
+│
+├── modules/                 # Modularized code directory
+│   │
+│   ├── image_processing/    # Image processing related functions
+│   │   ├── __init__.py
+│   │   ├── text_processor.py
+│   │   │   ├── process_images_to_text()
+│   │   │   ├── start_new_batch()
+│   │   │   └── get_sorted_filenames()
+│   │   └── json_utils.py
+│   │       ├── save_to_json()
+│   │       ├── save_email_data()
+│   │       ├── process_and_save_json()
+│   │       └── correct_json_format()
+│   │
+│   ├── file_handling/       # File processing functions
+│   │   ├── __init__.py
+│   │   ├── process_file.py
+│   │   │   ├── process_file()
+│   │   │   ├── process_png()
+│   │   │   └── process_pdf()
+│   │   └── directory_utils.py
+│   │       └── check_directories()
+│   │
+│   └── gpt/                 # GPT related functions
+│       ├── __init__.py
+│       ├── process/
+│       │   ├── __init__.py
+│       │   ├── gpt_process.py
+│       │   │   ├── load_env_variables()
+│       │   │   ├── get_prompt_template()
+│       │   │   ├── format_prompt()
+│       │   │   ├── calculate_cost()
+│       │   │   ├── gpt_process()
+│       │   │   └── log_error()
+│       │   └── prompt_template.txt
+│       │
+│       └── utils/
+│           ├── __init__.py
+│           └── process_batch.py
+│               └── process_batch()
+│
+├── config/                  # Configuration files
+│   ├── __init__.py
+│   └── settings.py          # Application-wide settings
+│
+├── tests/                   # Unit tests
+│   ├── __init__.py
+│   └── test_modules/
+│       ├── __init__.py
+│       ├── test_image_processing.py
+│       ├── test_file_handling.py
+│       └── test_gpt.py
+│
+└── requirements.txt         # Project dependencies

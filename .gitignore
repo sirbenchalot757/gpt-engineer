@@ -1,5 +1,7 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+/projects/textCompile/data
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
